@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nailrs.github.io/capi-la-tortue/sitemap.xml
