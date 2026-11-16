@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-<title>Jeu gratuit pour enfants de 3 à 7 ans : le Tour de France de Capi la Tortue</title><meta name="description" content="Jeu éducatif gratuit, sans pub et sans inscription, pour les 3-7 ans : puzzles, comptage, mémoire et mots du jour dans 14 villes de France avec Capi la tortue."><link rel="canonical" href="https://nailrs.github.io/capi-la-tortue/jeu/"><meta property="og:image" content="https://nailrs.github.io/capi-la-tortue/img/og.jpg"><link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
+<title>Jeu gratuit 3-7 ans sans pub : le Tour de France de Capi</title><meta name="description" content="Jeu éducatif gratuit, sans pub et sans inscription, pour les 3-7 ans : puzzles, comptage, mémoire et mots du jour dans 14 villes de France avec Capi la tortue."><link rel="canonical" href="https://nailrs.github.io/capi-la-tortue/jeu/"><meta property="og:image" content="https://nailrs.github.io/capi-la-tortue/img/og.jpg"><link rel="icon" href="../img/favicon.svg" type="image/svg+xml"><link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="../img/icon-192.png"><meta name="theme-color" content="#8fd8ff"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent;user-select:none;-webkit-user-select:none}
@@ -71,7 +71,7 @@ svg.i{display:block;width:100%;height:100%;overflow:visible}
   <h1 data-t="title"></h1><div class="sub" data-t="tour"></div>
   <div id="hero"><div class="b float"><svg class="i"><use href="#balloon"/></svg></div><div class="c"><svg class="i"><use href="#capi"/></svg></div><div class="p"><svg class="i"><use href="#plume"/></svg></div></div>
   <button class="btn" id="bPlay"></button>
-  <div class="par"><button id="bPar"><i></i><span data-t="gate"></span></button><div id="parL" style="display:none"><span data-t="parents"></span><br><a href="https://www.youtube.com/channel/UCDMRpzLxyom-LoNbo3EycBQ" target="_blank" rel="noopener">YouTube : Capi la Tortue</a></div></div>
+  <div class="par"><button id="bPar"><i></i><span data-t="gate"></span></button><div id="parL" style="display:none"><span data-t="parents"></span><br><a href="https://www.youtube.com/channel/UCDMRpzLxyom-LoNbo3EycBQ" target="_blank" rel="noopener">YouTube : Capi la Tortue</a><br><a href="../coloriages/">Coloriages gratuits</a> · <a href="../cahier/">Le Grand Cahier</a> · <a href="../">Le site</a></div></div>
  </section>
  <section class="scr" id="mapS">
   <div class="top"><button class="chip" id="bHome">🏠</button><h2 data-t="tour" style="margin:0"></h2><button class="chip" id="cnt"></button></div>
@@ -219,4 +219,4 @@ $('bLang').onclick=()=>{st.lang=st.lang=='fr'?'en':'fr';save();texts();sfx.tap()
 let rs=0;$('bReset').onclick=()=>{if(++rs<2){$('bReset').textContent=t('reset')+' ?';return}rs=0;st.done=0;save();home()};
 let pg=null;const gp=$('bPar');gp.onpointerdown=()=>{gp.classList.add('h');pg=setTimeout(()=>{gp.style.display='none';$('parL').style.display='block'},1500)};['pointerup','pointerleave','pointercancel'].forEach(e=>gp.addEventListener(e,()=>{clearTimeout(pg);gp.classList.remove('h')}));
 home();
-</script><script data-goatcounter="https://capilatortue.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script></body></html>
+</script><script data-goatcounter="https://capilatortue.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script><script>if('serviceWorker' in navigator)addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}))</script></body></html>
